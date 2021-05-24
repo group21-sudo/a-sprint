@@ -1,0 +1,15 @@
+<!-- rankinglist.wxml -->
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">本次排名</view>
+    <view class="th">学生学号</view>
+    <view class="th ">打卡次数</view>
+  </view>
+  <block wx:for="{{rankList}}" wx:key="rankList">
+    <view class="tr bg-g">
+      <view class="td">{{index+1}}</view>
+      <view class="td">{{item.stu_id}}</view>
+      <view class="td">{{item.signed_number}}</view>    </view>
+  </block>
+</view>

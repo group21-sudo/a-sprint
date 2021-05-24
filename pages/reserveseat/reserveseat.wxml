@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" class="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+  </view>
+  <view>当前自习室尚有{{usableSeats}}个座位</view>
+  <button bindtap="reserveSeat">进行预约</button>
+  <button bindtap="watchHr">查看历史信息</button>
+
+
+</view>
