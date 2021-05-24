@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="exploded-war" name="group21">
+      <output-path>$PROJECT_DIR$/out/artifacts/group21</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="group21" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="lib" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="group21/web/Web" />
+      </root>
+    </artifact>
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/group21.iml" filepath="$PROJECT_DIR$/group21.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="lib">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.11.jar!/" />
+        <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/json-20160810.jar!/" />
+        <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/slf4j-api-1.7.25.jar!/" />
+        <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/aip-java-sdk-4.15.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.76.jar!/" />
+        <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/gson-2.8.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/slf4j-simple-1.7.25.jar!/" />
+        <root url="file://E:/tomcat/apache-tomcat-8.5.31/bin" />
+        <root url="jar://E:/tomcat/apache-tomcat-8.5.31/lib/jsp-api.jar!/" />
+        <root url="jar://E:/tomcat/apache-tomcat-8.5.31/lib/servlet-api.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <NATIVE>
+        <root url="file://E:/tomcat/apache-tomcat-8.5.31/bin" />
+      </NATIVE>
+      <SOURCES />
+      <jarDirectory url="file://E:/tomcat/apache-tomcat-8.5.31/bin" recursive="false" />
+    </library>
+  </component>
+</project>
