@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" class="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+  </view>
+  <!-- <view class="userinfo-avatar">
+    <image src="../../image/zhicheng.jpg"></image>
+  </view> -->
+
+  <view><text>\n</text></view>
+  <view><text>\n</text></view>
+  <view>{{time}}</view>
+  <view><text>\n</text></view>
+  <view wx:if="{{!loginstatus}}">未登录,请先登录</view>
+  <view wx:else>欢迎你，{{name}} </view>
+  <form bindsubmit="FormBindSubmit" wx:if="{{!loginstatus}}">
+    <view>
+      <button form-type="submit">去登录</button>
+    </view>
+  </form>
+  <view wx:if="{{loginstatus}}">
+    <button bindtap="watchRL">查看排行榜</button>
+    <button bindtap="reserveseat">预约座位</button>
+    <button bindtap="unlogin">退出登录</button>
+  </view>
+  <view><text>\n</text></view>
+  <view wx:if="{{status}}">自习室目前已有人数：{{num}}</view>
+</view>
